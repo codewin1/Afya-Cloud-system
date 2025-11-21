@@ -10,6 +10,7 @@
 **AfyaCloud** is a full-stack MERN application that provides a reliable, cloud-based solution for **storing, syncing, and analyzing patient data** across healthcare facilities in Kenya — regardless of internet connectivity.
 
 It’s built to solve critical healthcare data challenges:
+
 - Poor connectivity in rural hospitals  
 - Loss or misuse of medical devices  
 - Inefficient, outdated EMR systems  
@@ -17,7 +18,51 @@ It’s built to solve critical healthcare data challenges:
 
 AfyaCloud ensures **secure**, **real-time**, and **interoperable** health data management — even in low-resource settings.
 
-[link]- afya-cloud-system.netlify.app
+## Live Demo  
+
+[Click here to view the live app](https://afya-cloud-system.netlify.app/)
+
+---
+
+## Screenshots  
+
+### Authentication  
+
+![Login Page](screenshots/login-page.png)  
+![Signup Page](screenshots/sign-up.png)  
+
+### Admin Dashboard  
+
+![Dashboard](screenshots/admin-dashboard.png)  
+
+### Patient page
+
+![Patients](screenshots/patient-details.png)  
+
+---
+
+## Tech Stack  
+
+*Frontend*:  
+
+- React  
+- TailwindCSS  
+- Axios  
+- React Router  
+- React Toastify  
+- Socket.io-client  
+
+*Backend*:  
+
+- Node.js + Express  
+- pgsql # soon to migrate that to MongoDB
+- JWT Authentication  
+- Socket.io  
+
+*Deployment*:  
+
+- Frontend → Netlify  
+- Backend → Render  
 
 ---
 
@@ -68,17 +113,17 @@ Make sure you have:
    ```
 
 2. **Install dependencies**
-   - For backend:
      ```bash
-     cd server
      npm install
+     npm run dev
+     
      ```
-   - For frontend:
-     ```bash
-     cd client
-     npm install
+     or
      ```
-
+     navigate to the [live app](https://afya-cloud-system.netlify.app/)
+     to access the site easily.
+     create an account
+     ```
 3. **Create an `.env` file** inside the `/server` folder:
    ```env
    MONGO_URI=your_mongodb_connection_string
@@ -86,20 +131,9 @@ Make sure you have:
    PORT=5000
    ```
 
-4. **Run the development servers**
-   ```bash
-   # Backend
-   cd server
-   npm run dev
-
-   # Frontend (in another terminal)
-   cd client
-   npm run dev
+4. Visit the frontend app:
    ```
-
-5. Visit the frontend app:
-   ```
-   http://localhost:5173
+   http://localhost:5000
    ```
 
 ---
